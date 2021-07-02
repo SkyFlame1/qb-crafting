@@ -1,13 +1,4 @@
-QBCore = nil
 local itemInfos = {}
-
-Citizen.CreateThread(function()
-	while QBCore == nil do
-		TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
-		Citizen.Wait(200)
-	end
-	ItemsToItemInfo()
-end)
 
 function DrawText3D(x, y, z, text)
 	SetTextScale(0.35, 0.35)

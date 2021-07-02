@@ -4,12 +4,8 @@ game 'gta5'
 description 'QB-Crafting'
 version '1.0.0'
 
-server_scripts {
-	'config.lua',
-	'server/main.lua'
-}
-
 client_scripts {
 	'config.lua',
+	'@qb-core/import.lua',
 	'client/main.lua'
 }
